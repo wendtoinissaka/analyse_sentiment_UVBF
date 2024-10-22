@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/wendtoin/Documents/UNIV/UVBF L3 2024/S6/4.Natural Language Processing/PROJET_NLP/extract_twiter/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from httpx import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
