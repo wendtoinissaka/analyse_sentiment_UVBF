@@ -5,7 +5,7 @@ import numpy as np
 facebook_df = pd.read_csv("uvbf_facebook.csv", delimiter=',')
 tweets_df = pd.read_csv("publications_uvbf_tweet.csv", delimiter=',')
 # tweets_df = pd.read_csv("tweets_uvbf.csv", delimiter=',')
-
+    
 # Vérifier et harmoniser les colonnes
 print("Colonnes du fichier Facebook avant harmonisation:", facebook_df.columns)
 if len(facebook_df.columns) == 2:
